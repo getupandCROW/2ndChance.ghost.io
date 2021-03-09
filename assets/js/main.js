@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
     var ghostAPI = new GhostContentAPI({
         host: config['content-api-host'],
         key: config['content-api-key'],
-        version: 'v2'
+        version: 'v1.4.1'
     });
 				       
 	$('.tilt').tilt({
