@@ -4,6 +4,17 @@
 
 jQuery(document).ready(function($) {
 
+    var config = {
+        'content-api-host': 'https://2ndchance.ghost.io',
+        'content-api-key': 'feb1fe295b850105454b5342e9',
+	};
+	
+    var ghostAPI = new GhostContentAPI({
+        host: config['content-api-host'],
+        key: config['content-api-key'],
+        version: 'v2'
+    }};
+				       
 	$('.tilt').tilt({
 		   glare: false,
 		   maxGlare: .25,
